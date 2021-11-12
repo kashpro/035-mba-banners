@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="shrink-to-fit=no, initial-scale=1.0, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    
+    /* banner3b styles */
+    @font-face {
+      font-family: 'Montserrat';
+      src: local('Montserrat Regular'), local('Montserrat-Regular'), url('./fonts/Montserrat-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      src: local('Montserrat Black'), local('Montserrat-Black'), url('./fonts/Montserrat-Black.woff2') format('woff2');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      src: local('Montserrat Bold'), local('Montserrat-Bold'), url('./fonts/Montserrat-Bold.woff2') format('woff2');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .banner3b {
+      font-family: 'Montserrat', "Arial", sans-serif;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .banner3b__container {
+      margin: 0 auto;
+	    max-width: 1200px;
+      height: 100%;
+    }
+    @media screen and (max-width: 1280px) {
+      .banner3b__container {
+        max-width: 960px;
+      }
+    }
+    @media screen and (max-width: 980px) {
+      .banner3b__container {
+        max-width: 680px;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .banner3b__container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    .banner3b__run {
+      height: 100px;
+      background-color: #0d0d0d;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 700px) {
+      .banner3b__run {
+        height: 60px;
+      }
+    }
+    .banner3b__runbox {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      animation: move 15s infinite linear;
+    }
+    @media screen and (max-width: 700px) {
+      .banner3b__runbox {
+        animation-name: move2;
+      }
+    }
+    @keyframes move {
+      0% {
+        transform: translateX(-3200px);
+      }
+      100% {
+        transform: translateX(-1588px);
+      }
+    }
+    @keyframes move2 {
+      0% {
+        transform: translateX(-3200px);
+      }
+      100% {
+        transform: translateX(-2079px);
+      }
+    }
+    .banner3b__run p {
+      flex: 0 0 auto;
+      color: #ffde00;
+      margin: 0;
+      font-size: 48px;
+      font-weight: 900;
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+    @media screen and (max-width: 700px) {
+      .banner3b__run p {
+        font-size: 32px;
+      }
+    }
+    .banner3b__run p span {
+      text-shadow: -2px -2px 0 #ffde00, 2px -2px 0 #ffde00, -2px 2px 0 #ffde00, 2px 2px 0 #ffde00;
+      color: #0d0d0d;
+    }
+    .banner3b__list {
+      display: flex;
+      color: #000;
+      list-style: none;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+    }
+    @media screen and (max-width: 700px) {
+      .banner3b__list {
+        flex-direction: column;
+      }
+    }
+    .banner3b__item {
+      position: relative;
+      max-width: 350px;
+      flex-basis: 350px;
+    }
+    @media screen and (max-width: 700px) {
+      .banner3b__item {
+        flex-basis: auto;
+      }
+    }
+    .banner3b__decor {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-color: #ffde00;
+      border-radius: 50%;
+      top: 11px;
+    }
+    @media screen and (max-width: 980px) {
+      .banner3b__decor {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .banner3b__percent {
+      position: relative;
+      z-index: 1;
+      font-size: 80px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 980px) {
+      .banner3b__percent {
+        font-size: 70px;
+      }
+    }
+    .banner3b__text {
+      line-height: 1.5;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media screen and (max-width: 980px) {
+      .banner3b__text {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="banner3b1b" class="banner3b">
+    <div class="banner3b__run">
+      <div class="banner3b__runbox">
+        <p>Ваши новые высоты с курсом <span>Директор по продажам</span></p>
+        <p>Ваши новые высоты с курсом <span>Директор по продажам</span></p>
+        <p>Ваши новые высоты с курсом <span>Директор по продажам</span></p>
+        <p>Ваши новые высоты с курсом <span>Директор по продажам</span></p>
+        <p>Ваши новые высоты с курсом <span>Директор по продажам</span></p>
+      </div>
+    </div>
+    <div class="banner3b__container">
+      <ul class="banner3b__list">
+        <li class="banner3b__item">
+          <div class="banner3b__decor"></div>
+          <div class="banner3b__percent">81 %</div>
+          <p class="banner3b__text">окажутся в числе выпускников, которые повысили финансовые показатели компании и свой личный доход</p>
+        </li>
+        <li class="banner3b__item">
+          <div class="banner3b__decor"></div>
+          <div class="banner3b__percent">91 %</div>
+          <p class="banner3b__text">выпускников станут преуспевающими в бизнесе за счет развития практических навыков</p>
+        </li>
+        <li class="banner3b__item">
+          <div class="banner3b__decor"></div>
+          <div class="banner3b__percent">68 %</div>
+          <p class="banner3b__text">будут среди выпускников, которые устроились на более престижную работу</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
